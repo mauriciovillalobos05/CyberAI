@@ -2,7 +2,7 @@ import random
 from datetime import datetime, timedelta
 
 # Settings
-num_entries = 1000
+num_entries = 100 # Total number of log entries to generate
 malicious_ips = [f"203.0.113.{i}" for i in range(10, 15)]  # Simulated attackers
 normal_ips = [f"192.168.1.{i}" for i in range(1, 30)]  # Internal/legit users
 users = ['root', 'admin', 'user', 'test', 'guest']
