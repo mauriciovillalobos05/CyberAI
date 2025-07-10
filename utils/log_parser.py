@@ -169,8 +169,10 @@ for n_estimators in param_grid['n_estimators']:
 print(f"\nBest PR-AUC: {best_pr_auc:.4f} with params: {best_params}")
 
 # Save best model to disk
-joblib.dump(best_model, "best_rf_model.joblib")
+joblib.dump(best_model, "../model/best_rf_model.joblib")
 print("Best model saved to best_rf_model.joblib")
+joblib.dump(tfidf, "../model/tfidf.joblib")
+joblib.dump(scaler, "../model/scaler.joblib")
 
 # Optional: Final evaluation on full dataset (or you can hold out test set if you want)
 y_pred = best_model.predict(X_combined)

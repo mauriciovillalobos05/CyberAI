@@ -27,3 +27,7 @@ build/
 
 
 best_rf_model.joblib
+tfidf.joblib
+scaler.joblib
+
+.env
