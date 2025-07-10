@@ -26,4 +26,4 @@ build/
 *.tar.xz
 
 
-            
+best_rf_model.joblib
